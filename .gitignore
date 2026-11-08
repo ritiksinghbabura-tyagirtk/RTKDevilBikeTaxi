@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Secrets
+.env
+*.key
+
+# Local database and uploads
+backend/instance/
+backend/uploads/
+
+# Build outputs
+build/
+dist/

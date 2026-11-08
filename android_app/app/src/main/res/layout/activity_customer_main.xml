@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rtk_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RTK DEVIL"
+                    android:textColor="@color/rtk_green"
+                    android:textSize="23sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aapki ride, aasaan ride"
+                    android:textColor="@color/rtk_muted"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="Logout"
+                android:textSize="12sp"
+                android:textColor="@color/rtk_text"
+                android:background="@drawable/bg_secondary_button"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kahan jaana hai?"
+            android:textColor="@color/rtk_text"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:layout_marginTop="26dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pickup aur destination select karke ride book karein."
+            android:textColor="@color/rtk_muted"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="17dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PICKUP LOCATION"
+                android:textColor="@color/rtk_green"
+                android:textSize="11sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etPickup"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Pickup address / gaon / landmark"
+                android:singleLine="true"
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/rtk_text"
+                android:textColorHint="@color/rtk_muted"
+                android:background="@drawable/bg_input"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="9dp">
+
+                <Button
+                    android:id="@+id/btnMyLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Use GPS"
+                    android:textSize="12sp"
+                    android:textColor="@color/rtk_text"
+                    android:background="@drawable/bg_secondary_button"/>
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="1dp"/>
+
+                <Button
+                    android:id="@+id/btnPickupMap"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Choose on map"
+                    android:textSize="12sp"
+                    android:textColor="@color/rtk_text"
+                    android:background="@drawable/bg_secondary_button"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rtk_border"
+                android:layout_marginVertical="17dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DROP LOCATION"
+                android:textColor="@color/rtk_green"
+                android:textSize="11sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etDrop"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Destination / market / hospital"
+                android:singleLine="true"
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/rtk_text"
+                android:textColorHint="@color/rtk_muted"
+                android:background="@drawable/bg_input"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnDropMap"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Choose destination on map"
+                android:textSize="12sp"
+                android:textColor="@color/rtk_text"
+                android:background="@drawable/bg_secondary_button"
+                android:layout_marginTop="9dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your ride"
+            android:textColor="@color/rtk_text"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="9dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="12dp"/>
+
+        <Button
+            android:id="@+id/btnEstimate"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="CHECK FARE"
+            android:textStyle="bold"
+            android:textColor="#101411"
+            android:background="@drawable/bg_primary_button"
+            android:layout_marginTop="14dp"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aapka fare aur ride status yahan dikhega."
+            android:textColor="@color/rtk_text"
+            android:textSize="15sp"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btnBookRide"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="CONFIRM &amp; BOOK RIDE"
+            android:textStyle="bold"
+            android:textColor="#101411"
+            android:background="@drawable/bg_primary_button"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btnCancelRide"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="CANCEL RIDE"
+            android:textColor="@color/rtk_red"
+            android:background="@drawable/bg_secondary_button"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="25dp"/>
+
+    </LinearLayout>
+</ScrollView>

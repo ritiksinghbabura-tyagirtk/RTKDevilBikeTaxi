@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rtk_bg">#101411</color>
+    <color name="rtk_surface">#1B211D</color>
+    <color name="rtk_surface_alt">#252D27</color>
+    <color name="rtk_green">#B7F34A</color>
+    <color name="rtk_green_dark">#8FC52D</color>
+    <color name="rtk_text">#F4F7F1</color>
+    <color name="rtk_muted">#AAB5AA</color>
+    <color name="rtk_border">#354138</color>
+    <color name="rtk_red">#FF6565</color>
+    <color name="rtk_white">#FFFFFF</color>
+</resources>
